@@ -2,7 +2,7 @@
     "idopontok": [
         {
             "id": 1,
-            "datum": "hétfő",
+            "datum": "Hétfő",
             "ora": "08:00",
             "nev": "Kiss József",
             "telefon": "06301234567"
@@ -10,14 +10,14 @@
         },
         {
             "id" : 2,
-            "datum": "hétfő",
-            "ora": "09:30",
+            "datum": "Hétfő",
+            "ora": "09:00",
             "nev": "Nagy Béla",
             "telefon": "06202222222"
         },
         {
             "id" : 3,
-            "datum": "kedd",
+            "datum": "Kedd",
             "ora": "11:00",
             "nev": "Kovács László",
             "telefon": "06303333333"

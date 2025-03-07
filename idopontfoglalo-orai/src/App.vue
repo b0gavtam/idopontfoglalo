@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import useIdopontStore from '@/stores/idopontfoglalas.js'
+import { useIdopontStore } from '@/stores/idopontfoglalas.js';
 const store = useIdopontStore();
 onMounted(async() => {
    await store.loadAll();
@@ -12,7 +12,6 @@ onMounted(async() => {
     <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header>

@@ -12,8 +12,9 @@
 </template>
 
 <script scoped>
+import { useIdopontStore } from '@/stores/idopontfoglalas'
 import { ref } from 'vue'
-import { useIdopontStore } from '@/stores/idopontfoglalas.js'
+
 const ujnev = ref()
 const ujtelefon = ref()
 const idopontStore = useIdopontStore()

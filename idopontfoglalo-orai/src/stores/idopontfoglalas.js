@@ -18,10 +18,7 @@ export const useIdopontStore = defineStore('idopont', () => {
       .then(response => response.json())
       .then(data => idopontok.value = data)
     }
-  const back = () => {
-    router.push("/")
-  }
     
 
-  return {ujidopontfoglalas, loadAll, back, idopontok}
+  return {ujidopontfoglalas, loadAll, back, idopontok, useIdopontStore, ujfoglalas}
 })
