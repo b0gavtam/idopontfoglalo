@@ -1,27 +1,364 @@
 {
-    "idopontok": [
-        {
-            "id": 1,
-            "datum": "Hétfő",
-            "ora": "08:00",
-            "nev": "Kiss József",
-            "telefon": "06301234567"
-            
-        },
-        {
-            "id" : 2,
-            "datum": "Hétfő",
-            "ora": "09:00",
-            "nev": "Nagy Béla",
-            "telefon": "06202222222"
-        },
-        {
-            "id" : 3,
-            "datum": "Kedd",
-            "ora": "11:00",
-            "nev": "Kovács László",
-            "telefon": "06303333333"
-        }
-
-    ]
+  "idopontok": [
+    {
+      "id": "1",
+      "datum": "Hétfő",
+      "ora": "08:00",
+      "nev": "Kiss József",
+      "telefon": "06301234567",
+      "foglalt": true
+    },
+    {
+      "id": "2",
+      "datum": "Hétfő",
+      "ora": "09:00",
+      "nev": "Nagy Béla",
+      "telefon": "06202222222",
+      "foglalt": true
+    },
+    {
+      "id": "1",
+      "datum": "Hétfő",
+      "ora": "10:00",
+      "nev": "Kiss József",
+      "telefon": "06301234567",
+      "foglalt": true
+    },
+    {
+      "id": "2",
+      "datum": "Hétfő",
+      "ora": "11:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "3",
+      "datum": "Hétfő",
+      "ora": "12:00",
+      "nev": "Nagy Béla",
+      "telefon": "06202222222",
+      "foglalt": true
+    },
+    {
+      "id": "4",
+      "datum": "Hétfő",
+      "ora": "13:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "5",
+      "datum": "Hétfő",
+      "ora": "14:00",
+      "nev": "Horváth Zoltán",
+      "telefon": "06303333333",
+      "foglalt": true
+    },
+    {
+      "id": "6",
+      "datum": "Hétfő",
+      "ora": "15:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "7",
+      "datum": "Hétfő",
+      "ora": "16:00",
+      "nev": "Kovács László",
+      "telefon": "06404444444",
+      "foglalt": true
+    },
+    {
+      "id": "8",
+      "datum": "Kedd",
+      "ora": "08:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "9",
+      "datum": "Kedd",
+      "ora": "09:00",
+      "nev": "Szabó Gábor",
+      "telefon": "06505555555",
+      "foglalt": true
+    },
+    {
+      "id": "10",
+      "datum": "Kedd",
+      "ora": "10:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "11",
+      "datum": "Kedd",
+      "ora": "11:00",
+      "nev": "Tóth Péter",
+      "telefon": "06706666666",
+      "foglalt": true
+    },
+    {
+      "id": "12",
+      "datum": "Kedd",
+      "ora": "12:00",
+      "nev": "Kiss István",
+      "telefon": "06807777777",
+      "foglalt": true
+    },
+    {
+      "id": "13",
+      "datum": "Kedd",
+      "ora": "13:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "14",
+      "datum": "Kedd",
+      "ora": "14:00",
+      "nev": "Nagy Anna",
+      "telefon": "06908888888",
+      "foglalt": true
+    },
+    {
+      "id": "15",
+      "datum": "Kedd",
+      "ora": "15:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "16",
+      "datum": "Kedd",
+      "ora": "16:00",
+      "nev": "Kovács Tamás",
+      "telefon": "07009999999",
+      "foglalt": true
+    },
+    {
+      "id": "17",
+      "datum": "Szerda",
+      "ora": "08:00",
+      "nev": "Varga Zsófia",
+      "telefon": "07101111111",
+      "foglalt": true
+    },
+    {
+      "id": "18",
+      "datum": "Szerda",
+      "ora": "09:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "19",
+      "datum": "Szerda",
+      "ora": "10:00",
+      "nev": "Szűcs Béla",
+      "telefon": "07202222222",
+      "foglalt": true
+    },
+    {
+      "id": "20",
+      "datum": "Szerda",
+      "ora": "11:00",
+      "nev": "Kiss Márk",
+      "telefon": "07303333333",
+      "foglalt": true
+    },
+    {
+      "id": "21",
+      "datum": "Szerda",
+      "ora": "12:00",
+      "nev": "kis pista",
+      "telefon": "666766",
+      "foglalt": true
+    },
+    {
+      "id": "22",
+      "datum": "Szerda",
+      "ora": "13:00",
+      "nev": "Tóth Anna",
+      "telefon": "07404444444",
+      "foglalt": true
+    },
+    {
+      "id": "23",
+      "datum": "Szerda",
+      "ora": "14:00",
+      "nev": "adajsf",
+      "telefon": "3333333",
+      "foglalt": true
+    },
+    {
+      "id": "24",
+      "datum": "Szerda",
+      "ora": "15:00",
+      "nev": "Horváth Katalin",
+      "telefon": "07505555555",
+      "foglalt": true
+    },
+    {
+      "id": "25",
+      "datum": "Szerda",
+      "ora": "16:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "26",
+      "datum": "Csütörtök",
+      "ora": "08:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "27",
+      "datum": "Csütörtök",
+      "ora": "09:00",
+      "nev": "Kovács Péter",
+      "telefon": "07606666666",
+      "foglalt": true
+    },
+    {
+      "id": "28",
+      "datum": "Csütörtök",
+      "ora": "10:00",
+      "nev": "Szabó Mária",
+      "telefon": "07707777777",
+      "foglalt": true
+    },
+    {
+      "id": "29",
+      "datum": "Csütörtök",
+      "ora": "11:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "30",
+      "datum": "Csütörtök",
+      "ora": "12:00",
+      "nev": "Varga Gábor",
+      "telefon": "07808888888",
+      "foglalt": true
+    },
+    {
+      "id": "31",
+      "datum": "Csütörtök",
+      "ora": "13:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "32",
+      "datum": "Csütörtök",
+      "ora": "14:00",
+      "nev": "József László",
+      "telefon": "07909999999",
+      "foglalt": true
+    },
+    {
+      "id": "33",
+      "datum": "Csütörtök",
+      "ora": "15:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "34",
+      "datum": "Csütörtök",
+      "ora": "16:00",
+      "nev": "Kiss József",
+      "telefon": "08001010101",
+      "foglalt": true
+    },
+    {
+      "id": "35",
+      "datum": "Péntek",
+      "ora": "08:00",
+      "nev": "Nagy Zoltán",
+      "telefon": "08101111111",
+      "foglalt": true
+    },
+    {
+      "id": "36",
+      "datum": "Péntek",
+      "ora": "09:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "37",
+      "datum": "Péntek",
+      "ora": "10:00",
+      "nev": "Kovács Imre",
+      "telefon": "08202222222",
+      "foglalt": true
+    },
+    {
+      "id": "38",
+      "datum": "Péntek",
+      "ora": "11:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "39",
+      "datum": "Péntek",
+      "ora": "12:00",
+      "nev": "Szabó Zoltán",
+      "telefon": "08303333333",
+      "foglalt": true
+    },
+    {
+      "id": "40",
+      "datum": "Péntek",
+      "ora": "13:00",
+      "nev": "Kiss Mária",
+      "telefon": "08404444444",
+      "foglalt": true
+    },
+    {
+      "id": "41",
+      "datum": "Péntek",
+      "ora": "14:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    },
+    {
+      "id": "42",
+      "datum": "Péntek",
+      "ora": "15:00",
+      "nev": "Horváth Gábor",
+      "telefon": "08505555555",
+      "foglalt": true
+    },
+    {
+      "id": "43",
+      "datum": "Péntek",
+      "ora": "16:00",
+      "nev": "",
+      "telefon": "",
+      "foglalt": false
+    }
+  ]
 }

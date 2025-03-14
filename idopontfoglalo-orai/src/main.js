@@ -1,14 +1,14 @@
-import { Toast,  POSITION }  from 'vue-toastification'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import "vue-toastification/dist/index.css"
 import 'bootstrap/dist/css/bootstrap.css'
 import App from './App.vue'
 import router from './router'
+import Toast from 'vue-toastification'
 
 const app = createApp(App)
 const options ={
-    POSITION: POSITION.TOP_RIGHT,
+    position: "top-right",
     timeout: 200,
     closeOnClick: true,
     pauseOnHover: true,
