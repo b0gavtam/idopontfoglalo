@@ -1,26 +1,26 @@
 <template>
-  <div class="container justify-content-center mt-5">
-    <h1 class="text-center mb-4">Új időpont foglalása</h1>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow-lg" style="max-width: 450px; width: 100%;">
+      <h2 class="text-center mb-4 text-primary">Új időpont foglalása</h2>
 
-    <p v-if="idopont" class="text-center mb-4">
-      {{ idopont.datum }} - {{ idopont.ora }}
-    </p>
-
-    <form @submit.prevent="submitFoglalas" class="w-50 mx-auto">
-      <div class="mb-3">
-        <label for="nev" class="form-label">Név:</label>
-        <input type="text" id="nev" v-model="nev" class="form-control" required />
+      <div v-if="idopont" class="alert alert-info text-center">
+        <strong>{{ idopont.datum }}</strong> - {{ idopont.ora }}
       </div>
 
-      <div class="mb-3">
-        <label for="telefon" class="form-label">Telefonszám:</label>
-        <input type="tel" id="telefon" v-model="telefon" class="form-control" required />
-      </div>
+      <form @submit.prevent="submitFoglalas" class="w-100 mx-auto">
+        <div class="mb-3">
+          <label for="nev" class="form-label">Név:</label>
+          <input type="text" id="nev" v-model="nev" class="form-control" required />
+        </div>
 
-      <div class="text-center">
-        <button type="submit" class="btn btn-success">Foglalás</button>
-      </div>
-    </form>
+        <div class="mb-3">
+          <label for="telefon" class="form-label">Telefonszám:</label>
+          <input type="tel" id="telefon" v-model="telefon" class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Foglalás</button>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -53,14 +53,4 @@ const submitFoglalas = async () => {
 };
 </script>
 <style scoped>
-.container {
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-}
-.submit-button {
-  background-color: #008CBA;
-  color: white;
-  padding: 10px;
-}
 </style>

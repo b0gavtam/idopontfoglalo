@@ -3,8 +3,8 @@
     <h1 class="text-center mb-4">Időpontfoglalás - Orvosi rendelő</h1>
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <div class="form-group">
-          <label for="idopont">Válassz egy időpontot: </label>
+        <div class="form-control">
+          <label for="idopont">Válasszon egy időpontot:&nbsp;</label>
           <select id="idopont" v-model="valasztottId">
             <option v-for="idopont in szabadIdopontok" :key="idopont.id" :value="idopont.id">
               {{ idopont.datum }} - {{ idopont.ora }}

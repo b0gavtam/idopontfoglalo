@@ -220,9 +220,9 @@
       "id": "26",
       "datum": "Csütörtök",
       "ora": "08:00",
-      "nev": "",
-      "telefon": "",
-      "foglalt": false
+      "nev": "kisebb",
+      "telefon": "piss",
+      "foglalt": true
     },
     {
       "id": "27",
