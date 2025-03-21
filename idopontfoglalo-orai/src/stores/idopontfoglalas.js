@@ -2,9 +2,11 @@ import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import { useToast } from 'vue-toastification';
 import axios from 'axios';
+import { useRouter } from 'vue-router';
 
 export const useIdopontStore = defineStore("idopont", () => {
   const idopontok = ref([]);
+  const router = useRouter()
   const toast = useToast()
   const fetchIdopontok = async () => {
     try {
@@ -16,21 +18,23 @@ export const useIdopontStore = defineStore("idopont", () => {
     }
   };
 
-  // Új foglalás rögzítése
-  const idopontFoglalas = async (id, nev, telefon) => {
-    if (!nev || !telefon) {
-      toast.warning("Minden mezőt ki kell tölteni!");
-      return;
-    }
-
+  
+  const idopontFoglalas = async (id, nev, telefon) => {  
     try {
-      await axios.patch(`http://localhost:3000/idopontok/${id}`, { foglalt: true, nev, telefon });
-      fetchIdopontok();
-      toast.info("Foglalás sikeres!");
+      if (!nev || !telefon) {
+        toast.warning("Minden mezőt ki kell tölteni!");
+        
+      }
+      else{
+        await axios.patch(`http://localhost:3000/idopontok/${id}`, { foglalt: true, nev, telefon });
+        fetchIdopontok();
+        toast.info("Foglalás sikeres!");
+        router.push("/");
+      }
     } catch (error) {
       console.error("Hiba a foglalás során:", error);
     }
   };
 
-  return { idopontok, fetchIdopontok, foglalIdopont: idopontFoglalas};
+  return { idopontok, fetchIdopontok, idopontFoglalas};
 });

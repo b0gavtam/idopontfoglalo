@@ -10,12 +10,12 @@
       <form @submit.prevent="submitFoglalas" class="w-100 mx-auto">
         <div class="mb-3">
           <label for="nev" class="form-label">Név:</label>
-          <input type="text" id="nev" v-model="nev" class="form-control" required />
+          <input type="text" id="nev" v-model="nev" class="form-control"  />
         </div>
 
         <div class="mb-3">
           <label for="telefon" class="form-label">Telefonszám:</label>
-          <input type="tel" id="telefon" v-model="telefon" class="form-control" required />
+          <input type="tel" id="telefon" v-model="telefon" class="form-control"  />
         </div>
 
         <button type="submit" class="btn btn-primary w-100">Foglalás</button>
@@ -48,8 +48,8 @@ const idopont = computed(() => {
 });
 
 const submitFoglalas = async () => {
-  await store.foglalIdopont(idopontId.value, nev.value, telefon.value);
-  router.push("/");
+  await store.idopontFoglalas(idopontId.value, nev.value, telefon.value);
+  
 };
 </script>
 <style scoped>
